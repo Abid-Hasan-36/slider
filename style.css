@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+
+    width: 800px;
+    height: 300px;
+    border: 1px solid gray;
+}
+
+.sliderx {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.slider {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    object-fit: cover;
+}
+.slider:not(.active){
+    top: 0;
+    left: -100%;
+}
+
+.slider1 {
+    background-color: red;
+}
+
+.slider2 {
+    background-color: blue;
+
+}
+
+span {
+    color: black;
+}
+
+.slider3 {
+    background-color: green;
+}
+
+.pre {
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    z-index: 1;
+    left: 15px;
+}
+
+.nxt {
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    z-index: 1;
+    right: 15px;
+}
+
+@keyframes nxt1{
+    from{
+        left: 0%
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes nxt2{
+    from{
+        left: 100%
+    }
+    to{
+        left: 0%;
+    }
+}
+
+@keyframes prev1{
+    from{
+        left: 0%
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes prev2{
+    from{
+        left: -100%
+    }
+    to{
+        left: 0%;
+    }
+}
