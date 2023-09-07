@@ -14,10 +14,10 @@ body {
 
 .container {
     position: relative;
-
+    border-radius: 15px;
     width: 800px;
     height: 300px;
-    border: 1px solid gray;
+   
 }
 
 .sliderx {
@@ -25,6 +25,7 @@ body {
     height: 100%;
     position: relative;
     overflow-x: hidden;
+    border-radius: 15px;
 }
 
 .slider {
@@ -32,22 +33,28 @@ body {
     width: 100%;
     height: 100%;
     background-color: green;
-    color: white;
+    color: black;
     font-size: 50px;
     position: absolute;
     object-fit: cover;
+    border-radius: 15px;
+
 }
-.slider:not(.active){
+
+.slider:not(.active) {
     top: 0;
     left: -100%;
 }
 
 .slider1 {
+
     background-color: red;
+    
 }
 
 .slider2 {
     background-color: blue;
+   
 
 }
 
@@ -57,56 +64,85 @@ span {
 
 .slider3 {
     background-color: green;
+ 
 }
 
 .pre {
     position: absolute;
     height: 40px;
-    width: 80px;
+    width: 40px;
     text-align: center;
     z-index: 1;
     left: 15px;
+    top: 140px;
+    border-radius: 50%;
+    background-color: rgb(197, 185, 185);
+    opacity: 0.5;
+    border: none;
+    font-size: 25px;
 }
 
 .nxt {
     position: absolute;
     height: 40px;
-    width: 80px;
+    width: 40px;
     text-align: center;
     z-index: 1;
     right: 15px;
+    top: 140px;
+    border-radius: 50%;
+    background-color: rgb(197, 185, 185);
+    opacity: 0.5;
+    border: none;
+    font-size: 25px;
 }
 
-@keyframes nxt1{
-    from{
+.nxt:hover {
+    opacity: 0.9;
+
+}
+
+.pre:hover {
+    opacity: 0.9;
+
+}
+
+@keyframes nxt1 {
+    from {
         left: 0%
     }
-    to{
+
+    to {
         left: -100%;
     }
 }
-@keyframes nxt2{
-    from{
+
+@keyframes nxt2 {
+    from {
         left: 100%
     }
-    to{
+
+    to {
         left: 0%;
     }
 }
 
-@keyframes prev1{
-    from{
+@keyframes prev1 {
+    from {
         left: 0%
     }
-    to{
+
+    to {
         left: 100%;
     }
 }
-@keyframes prev2{
-    from{
+
+@keyframes prev2 {
+    from {
         left: -100%
     }
-    to{
+
+    to {
         left: 0%;
     }
 }
